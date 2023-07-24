@@ -1,0 +1,33 @@
+gsap.to(".page1 h1",{
+    transform: "translateX(-100%)",
+    duration:1,
+    fontWeight: "100",
+    // delay:0.5,
+    scrollTrigger:{
+    // markers:true,
+    trigger: ".page1",
+    scroller: "body",
+    start: "top 0",
+    end: "top -300%",
+    scrub:3,
+    pin:true
+    }
+})
+
+
+gsap.from(".page2 h2",{
+    // transform: "translateY(-80%)",
+    scale:5,
+    duration:1,
+    fontWeight: "100",
+    // delay:0.5,
+    scrollTrigger:{
+    markers:true,
+    trigger: ".page2",
+    scroller: "body",
+    start: "top 20%",
+    end: "top -10%",
+    scrub:1,
+    pin:true
+    }
+})
